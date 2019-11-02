@@ -1,0 +1,257 @@
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-image: url(../img/bg-nike.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: "Roboto", sans-serif;
+            color: black;
+            height: 100vh;
+        }
+        
+        .container {
+            margin: 0 auto 60px;
+            width: 750px;
+        }
+        
+        .ba-header_wrapper {
+            margin: 10px 0px 60px 0px;
+        }
+        
+        .ba-header ul {
+            list-style: none;
+        }
+        
+        .ba-header ul li {
+            padding-right: 50px;
+            display: inline-block;
+        }
+        
+        .ba-button_menu {
+            padding-left: 65px;
+        }
+        
+        .ba-menu__link_active:after {
+            content: '';
+            display: block;
+            height: 1px;
+            border-bottom: 1px solid white;
+        }
+        
+        .ba-header a {
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 12px;
+            color: rgb(255, 255, 255);
+            line-height: 2.22em;
+        }
+        
+        .ba-header_wrapper,
+        .ba-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* BA-CARD img*/
+        
+        .ba-card {
+            background-color: #fff;
+            box-shadow: 24px 0px 0px -10px rgba(255, 255, 255, 0.4), -24px 0px 0px -10px rgba(255, 255, 255, 0.4), 48px 0px 0px -20px rgba(255, 255, 255, 0.4), -48px 0px 0px -20px rgba(255, 255, 255, 0.4);
+            display: flex;
+        }
+        
+        .ba-card__title {
+            margin-bottom: 0;
+        }
+        
+        .ba-card__gallery {
+            width: 500px;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .ba-card__info {
+            width: 250px;
+        }
+        
+        .ba-card__image {
+            width: 500px;
+            height: 360px;
+        }
+        
+        .ba-card__previews {
+            list-style: none;
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .ba-card__previews li {
+            margin-right: 20px;
+            width: 38px;
+            height: 38px;
+            overflow: hidden;
+            border: 3px solid #fff;
+            display: block;
+        }
+        
+        .ba-card__previews li:last-child {
+            padding-right: 0px;
+        }
+        
+        .ba-card__mini-thumb {
+            width: 38px;
+            height: 38px;
+        }
+        
+        .ba-card__mini-thumb:hover {
+            transform: scale(1.2, 1.2);
+        }
+        /* END BA-CARD img*/
+        
+        .ba-card__info {
+            padding: 10px 10px 10px 30px;
+        }
+        
+        .ba-badge_new {
+            color: #fff;
+            background-color: #ffa60d;
+            padding: 7px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-top: 30px;
+        }
+        
+        .ba-card__title {
+            font-size: 24px;
+            line-height: 1.125;
+            text-transform: uppercase;
+        }
+        
+        .ba-card__krest {
+            position: relative;
+            float: right;
+        }
+        
+        .ba-card__krest:before,
+        .ba-card__krest:after {
+            content: '';
+            display: block;
+            height: 16px;
+            width: 1px;
+            background-color: #ccc;
+            transform: rotate(45deg);
+            position: absolute;
+            right: 10px;
+        }
+        
+        .ba-card__krest:after {
+            transform: rotate(-45deg);
+        }
+        /* RATING STARS */
+        
+        .ba-card__subtitle {
+            font-size: 12px;
+            line-height: 2.25;
+            margin-bottom: 0;
+            display: inline-block;
+        }
+        
+        .ba-card__rate {
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+            display: inline-block;
+        }
+        
+        .ba-card__rate:hover .ba-card__stars {
+            color: #000;
+        }
+        
+        .ba-card__rate .ba-card__stars {
+            margin: 0;
+            padding: 0 0px 0 5px;
+            display: inline-block;
+            font-size: 12px;
+            cursor: pointer;
+            color: #000;
+            text-shadow: 0 1px #000, 0 -1px #000, 1px 0 #000, -1px 0 #000;
+        }
+        
+        .ba-card__rate .ba-card__stars:before {
+            content: '\2605';
+        }
+        
+        .ba-card__rate .ba-card__stars:hover~.ba-card__stars {
+            color: #fff;
+        }
+        
+        .ba-card__rate input:checked~label {
+            color: #fff;
+        }
+        /* END RATING STARS */
+        
+        .ba-card__title span {
+            color: #5e4fff;
+        }
+        
+        .ba-card__price {
+            font-size: 22px;
+            line-height: 1.227;
+        }
+        
+        .ba-card__size {
+            padding-bottom: 30px;
+        }
+        
+        .ba-card__size-list input,
+        .ba-card__rate input {
+            display: none;
+        }
+        
+        .ba-card__size-list {
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .ba-card__size-list label {
+            border: 1px solid #fff;
+            padding: 2px 3px;
+            min-width: 24px;
+            text-align: center;
+        }
+        
+        .ba-card__size-list input:checked+label {
+            border-color: #000;
+        }
+        
+        .ba-card__size-list input+label {
+            border-color: #fff;
+        }
+        
+        .ba-button {
+            text-transform: uppercase;
+            font-size: 12px;
+            line-height: 2.25;
+            padding: 0px 0;
+            width: 120px;
+            margin-bottom: 5px;
+        }
+        
+        .ba-button_purple {
+            background-color: #a200b8;
+            border: 1px solid #a200b8;
+            color: #fff;
+        }
+        
+        .ba-button_black {
+            background-color: #fff;
+            border: 1px solid black;
+            color: #000;
+        }
